@@ -1,0 +1,45 @@
+
+
+.actionBTN {
+    margin: 0 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.row9 {
+    height: 10vh;
+}
+
+.row10 {
+    height: 12vh;
+    background-color: aliceblue;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-img {
+    height: 50px;
+    width: 90px;
+}
+
+.row11 {
+    height: 100vh;
+    background-color: white;
+}
+
+.row12 {
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

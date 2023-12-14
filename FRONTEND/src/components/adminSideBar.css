@@ -1,0 +1,13 @@
+.admin-side-bar {
+    background-color: aliceblue;
+    height: 71vh;
+    padding: 20px 0;
+}
+
+.side-bar-list {
+    padding: 0px 25px;
+}
+
+.col-md-3 {
+    padding: 0;
+}

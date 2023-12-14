@@ -1,0 +1,36 @@
+/* .cardimg{
+    height: 100%;
+    width: 100%;
+}*/
+.cardsize{
+    width: 20%;
+} 
+.filterbtn{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(144,84,189,1) 0%, rgba(157,82,179,1) 46%, rgba(174,80,166,1) 70%);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+.filterbtn:hover{
+    background-color: #2980b9;
+}
+.quant{
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.prod:hover{
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+
+}
+.prod{
+    transition: transform 0.5s ease-in-out;
+}

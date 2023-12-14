@@ -1,0 +1,18 @@
+/* .img1{
+    height: 60vh;
+} */
+body{
+
+    color:aliceblue;
+}
+.btn{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    border-color: black;
+    
+}
+/* .cardimg{
+    height: 70%;
+    width: 80%;
+} */

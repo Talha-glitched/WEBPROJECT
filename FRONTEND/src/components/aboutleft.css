@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    /* height: 120vh; */
+}
+.images{
+ margin-left: 10px;
+}
+.card {
+    background: transparent;
+    border: none;
+    outline: none;
+ 
+}
+
+.card-body {
+    /* font-weight: ; */
+    color: black;
+}
+
+.card-title {
+    text-align: center;
+
+}
+
+.card-text {
+    text-align: justify;
+    color:black;
+}
+
+.card-img-top {
+    height: 45vh;
+    border-radius: 15px;
+}

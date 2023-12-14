@@ -1,0 +1,13 @@
+*{
+    background-color:#e9214e;
+}
+.rowCard{
+    background: transparent;
+    width: 30%;
+}
+
+.txt{
+    color: black;
+    text-align: center;
+    font-weight: 900;
+}

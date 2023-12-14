@@ -1,0 +1,11 @@
+
+.row2{
+    height: 60vh;
+}  
+
+.cimg{
+    height: 88vh;
+}
+.carbutton:hover{
+    background-color: rgba(255, 255, 255, 0);
+}

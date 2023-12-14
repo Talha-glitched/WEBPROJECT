@@ -1,0 +1,7 @@
+.track-container{
+    flex-direction: column;
+}
+
+.tracktxt{
+    color: black;
+}

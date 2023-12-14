@@ -1,0 +1,12 @@
+.form{
+    height: 50vh;
+    color: black;
+}
+/* *{
+    color: black;
+} */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.clients-logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .clients-logo-grid img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+  }
+  
