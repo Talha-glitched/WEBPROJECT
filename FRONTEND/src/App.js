@@ -2,7 +2,7 @@
  import Navbar from './components/Navbar';
  import './App.css';
  import Home from './components/Home';
-
+import NewSidebar from './components/NewSidebar';
  import About from './components/About';
  import Admin from './components/Admin';
  import RecentOrder from './components/RecentOrder';
@@ -31,6 +31,7 @@ import Showreview from  './components/ShowReviews';
 import Addproduct from './components/Addproduct';
 import Productview from './components/Productview';
 import ReviewsRight from './components/ReviewsRight';
+import Prac from './components/Prac';
 
 
  function App() {
@@ -59,6 +60,7 @@ import ReviewsRight from './components/ReviewsRight';
      <Route path='/reviews'  element={<ReviewsRight/>}></Route>
      <Route path='/showreviews' element={<Showreview/>}></Route>
      <Route path='/ManageProducts' element={<Productview/>}></Route>
+     <Route path='prac' element={<Prac/>}></Route>
      {/* <Route path='/viewproducts' element={<Productview/>}></Route> */}
      </Routes>
  </div>

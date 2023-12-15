@@ -1,13 +1,32 @@
 .admin-side-bar {
-    background-color: aliceblue;
+    background: rgb(227,173,199);
     height: 71vh;
     padding: 20px 0;
 }
-
+body{
+    color: black;
+    background-color: white;
+}
 .side-bar-list {
     padding: 0px 25px;
 }
 
 .col-md-3 {
     padding: 0;
+}
+.list_item {
+    background-color: #fa697b;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}   
+.list_item:hover {
+    background-color: #e43e51;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
 }

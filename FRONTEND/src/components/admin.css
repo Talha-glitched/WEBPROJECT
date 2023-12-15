@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
-
+.bor{
+    border: 2px solid rgb(227, 225, 225);
+}
 .row9 {
     height: 10vh;
 }
 
 .row10 {
     height: 12vh;
-    background-color: aliceblue;
+    background: rgb(255,255,255);
+    background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(227,173,199,1) 99%);
     margin: 0;
     text-align: center;
     display: flex;
@@ -24,7 +27,8 @@
 
 .row11 {
     height: 100vh;
-    background-color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(227,173,199,1) 99%);
 }
 
 .row12 {

@@ -9,14 +9,14 @@ import React, { useState, useEffect } from 'react';
 function Admin() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid bor">
        
-        <div className="row row11">
-          <div className="col col-md-3">
+        <div className="row row11 bor">
+          <div className="col col-md-3 bor" >
             <div className="row row10">
               <img className="admin-img" src={adminlogo} alt="" />
               <h5>Admin Dashboard</h5>
-            </div>
+            </div >
             <AdminSideBar />
           </div>
           <div className="col col-md-9">

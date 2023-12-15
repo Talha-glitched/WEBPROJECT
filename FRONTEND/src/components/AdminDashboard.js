@@ -2,6 +2,7 @@ import Orders from "./Orders";
 import "./adminDashboard.css";
 import React, { useState, useEffect } from 'react';
 import { data } from './data';
+import sideex from "../img/sideex.jpeg"
 function AdminDashboard() {
   const [products, setProducts] = useState(data);
 
@@ -11,8 +12,8 @@ function AdminDashboard() {
   return (
     <>
       <div className="dashboard">
-        <h2>Top Orders</h2>
-     <Orders products={products} onUpdateProduct={handleUpdateProduct} />
+        <h2 className="container">Top Orders</h2>
+        <img src={sideex} style={{width:"100%"}} />
       </div>
     </>
   );

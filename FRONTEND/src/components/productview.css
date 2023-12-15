@@ -1,0 +1,14 @@
+.card_sizing{
+    height: 200px;
+    width: 200px;
+    margin: 3rem;
+    padding: 10px;
+    background-color: #f58895;
+}
+.cantainer{
+  
+    background: rgb(255,255,255);
+background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(227,173,199,1) 99%);
+    border-top: 1px solid #e7e7e7;
+    border-radius: 30px;
+}
