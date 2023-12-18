@@ -3,21 +3,25 @@
     flex-direction: column;
     align-items: center;
     margin: 50px;
+    color: black;
   }
   
   form {
     display: flex;
     flex-direction: column;
     width: 300px;
+    color: black;
   }
   
   .form-group {
     margin-bottom: 15px;
     border-radius: 20px;
+    color: black;
   }
   
   label {
     margin-bottom: 5px;
+    color: black;
   }
   
   input {

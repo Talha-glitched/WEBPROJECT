@@ -9,7 +9,7 @@ import { createproduct, getproduct } from "./Controller/Controllproduct.js";
 import canvasmodel from "./models/canvasmodel.js";
 //BACKEND CODE
 const app = express();
-
+const PORT=process.env.PORT||5000;
 
 const url ="mongodb+srv://rana_talha16:the.edgyguy23@cluster0.rykde1s.mongodb.net/?retryWrites=true&w=majority"
 
@@ -39,7 +39,7 @@ const upload = multer({
   fileFilter: fileFilter
 });
 
-app.listen(5000);
+app.listen(PORT,()=>console.log(`Server running on port: http://localhost:${PORT}`));
 
 app.use(cors({origin:"http://localhost:3000"}));
 app.use(bodyParser.json( { extended: true } ));

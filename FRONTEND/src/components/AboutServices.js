@@ -23,27 +23,27 @@ function AboutServices() {
       <div className="service-item">
        
       <Link to="/showroom" style={{textDecoration:"none",}}>
-      <img src={office} alt="Showroom & Office Branding"style={{height:"150px", width: "150px"}} />
+      <img src={office} alt="Showroom & Office Branding"style={{height:"60px", width: "60px"}} />
         <h3>Showroom and Office Branding</h3></Link>
         <p>With over a decade of manufacturing and installation experience in indoor and outdoor sign5</p>
       </div>
       <div className="service-item" style={{backgroundColor: '#f4f4f4' }}>
             <Link to="/sign" style={{textDecoration:"none", color:"black"}}>
-            <img src={sign} alt="Signages Indoor & Outdoor"style={{height:"150px", width: "150px"}} />
+            <img src={sign} alt="Signages Indoor & Outdoor"style={{height:"60px", width: "60px"}} />
               <h3>Signages Indoor & Outdoor</h3> </Link>   
               <p>With over a decade of manufacturing and installation experience in indoor and outdoor sign5</p>
 
       </div>
       <div className="service-item">
        <Link to="/retail" style={{textDecoration:"none", color:"black"}}>
-       <img src={signboard} alt="Retail Branding & Displays"style={{height:"150px", width: "150px"}} />
+       <img src={signboard} alt="Retail Branding & Displays"style={{height:"60px", width: "60px"}} />
          <h3>Retail Branding & Displays</h3></Link>
          <p>With over a decade of manufacturing and installation experience in indoor and outdoor sign5</p>
 
       </div>
       <div className="service-item" style={{backgroundColor: '#f4f4f4' }}>
        <Link to='/corporate' style={{textDecoration:"none", color:"black"}}>
-       <img src={corporate} alt="Corporate Events Branding"style={{height:"150px", width: "150px"}} />
+       <img src={corporate} alt="Corporate Events Branding"style={{height:"60px", width: "60px"}} />
          <h3>Corporate Events Branding</h3></Link>
          <p>With over a decade of manufacturing and installation experience in indoor and outdoor sign5</p>
 
@@ -51,7 +51,7 @@ function AboutServices() {
       <div className="service-item">
         
         <Link to='/print'style={{textDecoration:"none", color:"black"}}>
-        <img src={printing} alt="Large Format Printing"style={{height:"150px", width: "150px"}} />
+        <img src={printing} alt="Large Format Printing"style={{height:"60px", width: "60px"}} />
         <h3>Large Format Printing</h3>
         <p>With over a decade of manufacturing and installation experience in indoor and outdoor sign5</p>
 </Link>
