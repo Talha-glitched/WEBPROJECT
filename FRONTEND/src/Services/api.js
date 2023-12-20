@@ -1,5 +1,5 @@
 import axios from "axios";
-const url="http://localhost:5000";
+const url="https://webproject-three.vercel.app";
 const api=axios.create({
     url:url
 });
