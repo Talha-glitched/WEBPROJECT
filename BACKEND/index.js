@@ -41,7 +41,7 @@ const upload = multer({
 
 app.listen(PORT,()=>console.log(`Server running on port: http://localhost:${PORT}`));
 
-app.use(cors({origin:"http://localhost:3000"}));
+app.use(cors());
 app.use(bodyParser.json( { extended: true } ));
 app.use(bodyParser.urlencoded ({ extended: true}));
 
