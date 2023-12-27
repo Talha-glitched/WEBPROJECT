@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import QuoteRoute from "./routes/QuoteRoute.js";
 import Proddata from "./routes/Proddata.js"
+import UserRoute from "./routes/UserRoute.js";
 import { createproduct, getproduct } from "./Controller/Controllproduct.js";
 import canvasmodel from "./models/canvasmodel.js";
 //BACKEND CODE
@@ -44,12 +45,13 @@ app.listen(PORT,()=>console.log(`Server running on port: http://localhost:${PORT
 app.use(cors());
 app.use(bodyParser.json( { extended: true } ));
 app.use(bodyParser.urlencoded ({ extended: true}));
-
+app.post("/login",UserRoute);
 app.use("/", Proddata );
 app.use("/viewproducts",Proddata);
 app.delete("/:id",Proddata);
 app.use("/reviews",QuoteRoute);
 app.use('/Uploads', express.static('uploads'));
+app.use("/signup",UserRoute);
 
 
 

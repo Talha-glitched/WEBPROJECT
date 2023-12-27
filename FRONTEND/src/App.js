@@ -32,6 +32,8 @@ import Addproduct from './components/Addproduct';
 import Productview from './components/Productview';
 import ReviewsRight from './components/ReviewsRight';
 import Prac from './components/Prac';
+import Signup from './components/Signup';
+import Login from './components/Login';
 
 
  function App() {
@@ -61,7 +63,8 @@ import Prac from './components/Prac';
      <Route path='/showreviews' element={<Showreview/>}></Route>
      <Route path='/ManageProducts' element={<Productview/>}></Route>
      <Route path='prac' element={<Prac/>}></Route>
-     {/* <Route path='/viewproducts' element={<Productview/>}></Route> */}
+     <Route path='/signup' element={<Signup/>}></Route>
+     <Route path='/login' element={<Login/>}></Route>
      </Routes>
  </div>
 

@@ -22,3 +22,15 @@ color: #E9204F;
     background-color: white;
     color: aliceblue;
 } */
+.buton{
+    background-color: #E9204F;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 19rem;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+   
+}

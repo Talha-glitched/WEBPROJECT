@@ -1,5 +1,6 @@
 import axios from "axios";
-const url="https://webproject-three.vercel.app";
+ const url="https://webproject-three.vercel.app/ ";
+// const url="http://localhost:5000";
 const api=axios.create({
     url:url
 });
@@ -34,3 +35,8 @@ return response.data;
       throw new Error(error.response.data.message);
     }
   };                                                                                             
+ export const addUserData = async (userData) => {
+  console.log("API REACHED ",userData);
+  return await axios.post(`${url}/signup`, userData);
+  
+}
