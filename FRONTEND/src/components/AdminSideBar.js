@@ -14,17 +14,17 @@ function AdminSideBar() {
   return (
     <>
       <div className="list-group admin-side-bar" >
-        <Link to="/recentorders" className="list_item  list-group-item side-bar-list  ">
+        <Link to="/recentorders" className="list_item_old  list-group-item side-bar-list  ">
           <span><img src={icon1} /></span>
           Recent Orders
         </Link>
-       <Link to="/trackorders"  className="list_item list-group-item side-bar-list ">
+       <Link to="/trackorders"  className="list_item_old list-group-item side-bar-list ">
        <span><img src={icon4}/></span>Track Orders
        </Link>
-       <Link to="/ManageProducts"  className="list_item list-group-item side-bar-list ">
+       <Link to="/ManageProducts"  className="list_item_old list-group-item side-bar-list ">
        <span><img src={icon2}/></span>  Manage Products
        </Link>
-        <Link to="/AddProduct" className="list_item list-group-item side-bar-list ">
+        <Link to="/AddProduct" className="list_item_old list-group-item side-bar-list ">
         <span><img src={icon3}/></span>    Add Products
         </Link>            
         <a

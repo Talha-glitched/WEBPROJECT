@@ -38,8 +38,9 @@ export default function Signup() {
     };
 
     return (
-        <div className="signup container">
-            <div className="container">
+       <div className='Signup-row1'>
+         <div className="signup">
+            <div className=" Signup-container">
                 <div className="row justify-content-center">
                     <div className="col-md-5">
                         <div className="card">
@@ -89,5 +90,6 @@ export default function Signup() {
                 </div>
             </div>
         </div>
-    );
+
+       </div>    );
 }

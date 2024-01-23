@@ -34,7 +34,8 @@ import ReviewsRight from './components/ReviewsRight';
 import Prac from './components/Prac';
 import Signup from './components/Signup';
 import Login from './components/Login';
-
+import RequireAuth from './components/RequireAuth';
+import Adminpanel from './components/Adminpanel';
 
  function App() {
    return (
@@ -46,7 +47,7 @@ import Login from './components/Login';
      <Route path='*' element={<Home/>}></Route>
      <Route path='/home' element={<Home/>}></Route>
      <Route path='/aboutservices' element={<AboutServices/>}></Route>
-       <Route path='/admin' element={<Admin/>}></Route>
+     <Route path='/admin' element={<Admin/>} />
        <Route path='/recentorders' element={<RecOrd/>}></Route>
        <Route path='/trackorders' element={<TrackOrders/>}></Route>
        <Route path='/cancelledorders' element={<CancelledOrders/>}></Route>
@@ -65,6 +66,7 @@ import Login from './components/Login';
      <Route path='prac' element={<Prac/>}></Route>
      <Route path='/signup' element={<Signup/>}></Route>
      <Route path='/login' element={<Login/>}></Route>
+     <Route path='/newadmin' element={<Adminpanel/>}></Route>
      </Routes>
  </div>
 

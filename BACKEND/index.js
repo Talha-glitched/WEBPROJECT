@@ -8,6 +8,7 @@ import Proddata from "./routes/Proddata.js"
 import UserRoute from "./routes/UserRoute.js";
 import { createproduct, getproduct } from "./Controller/Controllproduct.js";
 import canvasmodel from "./models/canvasmodel.js";
+import authenticateToken from "./Middleware/authMiddleware.js";
 //BACKEND CODE
 const app = express();
 const PORT=process.env.PORT||5000;
@@ -42,7 +43,11 @@ const upload = multer({
 
 app.listen(PORT,()=>console.log(`Server running on port: http://localhost:${PORT}`));
 
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true,
+  methods: ['GET', 'POST' ],
+}));
 app.use(bodyParser.json( { extended: true } ));
 app.use(bodyParser.urlencoded ({ extended: true}));
 app.post("/login",UserRoute);
@@ -52,7 +57,18 @@ app.delete("/:id",Proddata);
 app.use("/reviews",QuoteRoute);
 app.use('/Uploads', express.static('uploads'));
 app.use("/signup",UserRoute);
-
+app.get('/home', authenticateToken, (req, res) => {
+  res.send('Welcome to the home page!');
+});
+app.get('/admin', authenticateToken, (req, res) => {
+  res.send('Welcome to the home page!');
+});
+app.get('/', authenticateToken, (req, res) => {
+  res.send('Welcome to the home page!');
+});
+app.get('/AddProduct', authenticateToken, (req, res) => {
+  res.send('Welcome to the home page!');
+});
 
 
 

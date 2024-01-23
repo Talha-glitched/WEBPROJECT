@@ -37,3 +37,14 @@ input[type='password'] {
 .sign-up-button:hover {
   background-color: #c8153a;
 }
+
+
+.Signup-row1{
+  height: 100vh;
+}
+.Signup-container{
+height: 90vh;
+ position: absolute;
+ top: 20%;
+ left: 35%;
+}

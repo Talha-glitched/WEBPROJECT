@@ -7,26 +7,26 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+axios.defaults.withCredentials = true;
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const result = await axios.post('http://localhost:5000/login', { email, password });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const result = await axios.post('http://localhost:5000/login', { email, password });
+    if (result.data.message === 'Successful') {
+      const token = result.data.token;
+      // Store the token in localStorage or sessionStorage for later use
+      localStorage.setItem('token', JSON.stringify(token)); // Example using localStorage
 
-      if (result.data === 'Successful') {
-        navigate('/home'); // Redirect to the home screen upon successful login
-      } else if (result.data === 'Wrong') {
-        alert('Wrong Password');
-      }
-      console.log(result);
-    } catch (error) {
-      if (error.response && error.response.status === 401) {
-        alert('Unauthorized: Incorrect email or password');
-      } else {
-        console.error('An error occurred:', error.message);
-      }
+      navigate('/home'); // Redirect to the home screen upon successful login
+    } else {
+      alert(result.data.message); // Display error message from backend
     }
-  };
+  } catch (error) {
+    console.error('An error occurred:', error.message);
+  }
+};
+
 
   return (
     <div className="login-form-container">

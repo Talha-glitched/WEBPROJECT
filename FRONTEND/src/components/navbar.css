@@ -33,4 +33,7 @@ color: #E9204F;
     font-size: 15px;
     font-weight: bold;
    
+} 
+.search{
+    display: flex;
 }
